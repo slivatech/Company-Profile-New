@@ -20,6 +20,10 @@ export const Wrapper = styled.div`
 export const TextWrap = styled.div`
     max-width: 380px;
 
+    @media screen and (max-width: 450px) {
+        max-width: 320px;
+    }
+
     p:first-child{
         font-size: 22px;
         font-weight: 500;
@@ -34,11 +38,21 @@ export const TextWrap = styled.div`
 `
 
 export const CardWrap = styled.div`
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto auto;
     column-gap: 100px;
-    row-gap: 40px;
+    row-gap: 40px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 40px;
+    row-gap: 50px;
+    column-gap: 50px;
+    max-width: 1000px;
+
+    @media screen and (max-width: 450px) {
+        row-gap: 15px;
+    }
 `
 
 // export const HoverWrap = styled.div`
@@ -66,13 +80,18 @@ export const IconWrap = styled.div`
 `
 
 export const Card = styled.div`
-    width: 320px;
-    height: 130px;
+    width: 40%;
+    height: auto;
+    min-height: 140px;
     border: 1px solid #000;
     border-radius: 10px;
     padding: 0 12px;
     background: #FAFAFA;
     transition: 0.5s;
+
+    @media screen and (max-width: 450px) {
+        width: 70%;
+    }
 
     &:hover{
         background: #C9ECDC ;

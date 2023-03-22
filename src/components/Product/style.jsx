@@ -1,12 +1,37 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    padding: 0 82px;
-    margin-bottom: 100px;
-    
-    /* position: relative; */
-    /* background: #F6F4F9; */
+    padding-bottom: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* background-color: #f6f4f9; */
+
+    @media screen and (max-width: 450px) {
+        padding-bottom: 40px;
+    }
 `
+
+export const Wrapper = styled.div`
+    width: 1400px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* padding-bottom: 50px;
+    padding-top: 50px; */
+    /* background-color: red; */
+    @media screen and (max-width: 450px) {
+        max-width: 350px;
+    }
+`
+
+// export const Container = styled.div`
+//     padding: 0 82px;
+//     margin-bottom: 100px;
+    
+//     /* position: relative; */
+//     /* background: #F6F4F9; */
+// `
 
 export const CardWrap = styled.div`
     /* background-color: red; */
@@ -20,24 +45,33 @@ export const TitleContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
+    width: 100%;
+    /* background-color: red; */
 
     .first{
         font-size: 12px;
     }
 
     .second{
-        width: 300px;
+        width: 30%;
         font-size: 23px;
         text-align: center;
         margin-top: -22px;
         font-weight: 500;
+
+        @media screen and (max-width: 450px) {
+            width: 90%;
+        }
     }
 
     .third{
-        width: 460px;
+        width: 40%;
         font-size: 12px;
         text-align: center;
         margin-top: -20px;
+        @media screen and (max-width: 450px) {
+            width: 95%;
+        }
     }
 `
 
@@ -114,5 +148,60 @@ export const RightContent = styled.div`
             width: 180px;
             height: 340px;
         }
+    }
+`
+
+export const WrapperPhone = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 50px; */
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: ${({isFirst}) => isFirst? '1px' : '40px'}
+    }
+`
+
+export const ImageWrapper = styled.div`
+    img{
+        width: 120px;
+        height: 200px;
+    }
+`
+
+export const MobileContentWrap = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+
+    .title{
+        font-size: 20px;
+    }
+
+    .text{
+        text-align: center;
+        font-size: 11.5px;
+    }
+
+    .bttn{
+        display: flex;
+        width: 100%;
+        gap: 10px;
+
+        a{
+            width: 100%;
+            margin-top: 20px;
+            text-decoration: none;
+            /* background: red; */
+        }
+    }
+
+    a{
+        margin-top: 20px;
+        width: 100%;
     }
 `

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "./style";
+import { Container, ContentWrap, Wrapper } from "./style";
 import service1 from '../../assets/service1.png'
 import service2 from '../../assets/ser2.png'
 import service3 from '../../assets/service3.png'
@@ -36,29 +36,33 @@ const list = [
     },
 ]
 
-const Service = () => {
+const Service = ({width}) => {
     return(
         <Container id="Service">
-            <div className="textContainer">
-                <div>
-                    <p className="first">Services</p>
-                    <p className="second">Positive user experience and coupled with the latest technology for reliable performance, higher interactivity and longer service life.</p>
-                </div>
-            </div>
-            <div className="serviceContainer">
-                {list.map((data) => (
-                    <div key={data.id} className='cardWrap'>
-                        <div className='card' style={{marginTop: data.margin? data.margin: ''}}>
-                            {/* <div className="shadow">p</div> */}
-                            <img src={data.img} alt="" />
-                            <div>
-                                <p className="title">{data.Title}</p>
-                                <p className="text">{data.Text}</p>
-                            </div>
+            <Wrapper>
+                <ContentWrap>
+                    <div className="textContainer">
+                        <div>
+                            <p className="first">Services</p>
+                            <p className="second">Positive user experience and coupled with the latest technology for reliable performance, higher interactivity and longer service life.</p>
                         </div>
                     </div>
-                ))}
-            </div>
+                    <div className="serviceContainer">
+                        {list.map((data) => (
+                            <div key={data.id} className='cardWrap'>
+                                <div className='card' style={{marginTop: width > 450? data.margin: '' }}>
+                                    {/* <div className="shadow">p</div> */}
+                                    <img src={data.img} alt="" />
+                                    <div>
+                                        <p className="title">{data.Title}</p>
+                                        <p className="text">{data.Text}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </ContentWrap>
+            </Wrapper>
         </Container>
     )
 }

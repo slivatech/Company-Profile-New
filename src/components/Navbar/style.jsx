@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -11,9 +11,22 @@ export const Header = styled.header`
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 82px;
+    z-index: 100;
+
+    @media screen and (max-width: 450px) {
+        padding: 0 17px 0 17px ;
+    }
 `
+
+export const Nav = styled.div`
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+` 
 
 export const ImageContainer = styled.div`
     .logo{
@@ -32,6 +45,44 @@ export const ListContainer = styled.div`
         /* font-family: 'Roboto'; */
         font-style: normal;
         font-weight: 400;
+        text-decoration: none;
+        color: black;
+    }
+`
+
+export const MobileWrap = styled.div`
+    img{
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    .close{
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+    }
+`
+
+export const Overlay = styled.div`
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f6f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    gap: 20px;
+
+    a{
+        cursor: pointer;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
         text-decoration: none;
         color: black;
     }

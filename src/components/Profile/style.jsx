@@ -1,14 +1,45 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    padding: 100px 82px;
-    background: #F6F4F9;
-    /* display: flex;
-    align-items: center; */
+    /* padding: 0 82px; */
+    width: 100vw;
+    padding: 50px 1px;
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 450px) {
+        padding: 45px 1px 20px 1px;
+    }
+`
+
+export const Wrapper = styled.div`
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 60px;
+    /* background-color: red; */
+    @media screen and (max-width: 450px) {
+        /* max-width: 340px; */
+        margin-top: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 `
 
 export const Parents = styled.div`
     display: flex;
+    flex-direction: row;
+    width: 90%;
+    /* min-width: 1100px; */
+
+    @media screen and (max-width: 450px) {
+        flex-direction: column;
+    }
+
     div{
         flex: 1;
     }
@@ -26,11 +57,20 @@ export const LeftParents = styled.div`
         font-weight: 500;
         margin-top: -3px;
         margin-bottom: 30px;
+
+        @media screen and (max-width: 450px) {
+            margin-top: -12px;
+            margin-bottom: 24px;
+        }
     }
 `
 
 export const RightParents = styled.div`
     position: relative;
+
+    @media screen and (max-width: 800px) {
+        display: none;
+    }
 
     .academy{
         position: absolute;
