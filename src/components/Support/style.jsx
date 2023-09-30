@@ -5,7 +5,7 @@ export const Container = styled.div`
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: #FFFEF0;
+    // background-color: #FFFEF0;
     `
 
 export const Wrapper = styled.div`
@@ -44,10 +44,11 @@ export const LeftInfo = styled.div`
             display: flex;
             flex-direction: column;
             align-items: center;
+            align-content: center;
             background-color: #7572E9;
-            max-width: 110px;
+            max-width: 130px;
             font-size: 12px;
-            height: 30px;
+            height: 35px;
             border-radius: 30px;
             margin-top: 20px;
 
@@ -72,7 +73,7 @@ export const LeftInfo = styled.div`
     }
 
     .first{
-        font-size: 22px;
+        font-size: 28px;
         font-weight: 500;
 
         @media screen and (max-width: 450px) {
@@ -81,7 +82,7 @@ export const LeftInfo = styled.div`
     }
 
     .second{
-        font-size: 12px;
+        font-size: 14px;
 
         @media screen and (max-width: 450px) {
             text-align: center;
@@ -96,10 +97,11 @@ export const RightInfo = styled.div`
     /* background-color: green; */
     display: flex;
     justify-content: center;
+    margin: 20px 0;
 
     img{
-        width: 280px;
-        height: 280px;
+        width: 300px;
+        height: 300px;
     }
 `
 
@@ -163,12 +165,12 @@ export const RightEmail = styled.div`
         }
 
         .first{
-            font-size: 22px;
+            font-size: 28px;
             font-weight: 500;
         }
 
         .second{
-            font-size: 12px;
+            font-size: 14px;
             margin-top: -10px;
         }
         
@@ -186,9 +188,10 @@ export const Form = styled.div`
         input{
             height: 35px;
             background-color: transparent;
+            border-radius: 5px;
             padding: 0 10px;
             width: 50%;
-            border-color:#A9A547;
+            // border-color:#A9A547;
             /* background: #7F7C35; */
             ::placeholder{
                 color: #A9A547;
@@ -208,7 +211,8 @@ export const Form = styled.div`
             background-color: transparent;
             padding: 0 10px;
             width: 50%;
-            border-color:#A9A547;
+            // border-color:#A9A547;
+            border-radius: 5px;
             ::placeholder{
                 color: #A9A547;
             }
@@ -227,7 +231,8 @@ export const Form = styled.div`
             width: 100%;
             background: transparent;
             padding: 10px;
-            border-color:#A9A547;
+            border-color: #transparent;
+            border-radius: 5px;
             ::placeholder{
                 color: #A9A547;
             }

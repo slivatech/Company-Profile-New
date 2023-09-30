@@ -1,35 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Button from "../Button";
 import { Container, EmailWrap, InformationWrap, LeftInfo, RightInfo, Wrapper, LeftEmail, RightEmail, Line, Form } from "./style";
 
 const Support = () => {
-    const [errorMsg, setErrorMsg] = useState()
-    const [form, setForm] = useState({
+    const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
         email: '',
         phone: '',
-        message: ''
-    })
+        message: '',
+      });
+    
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+    
+        const { firstName, lastName, email, phone, message } = formData;
+    
+        const emailLink = `mailto:slivatechnology1@gmail.com?subject=New Email&body=First Name: ${firstName}%0D%0ALast Name: ${lastName}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMessage: ${message}`;
+    
+        window.location.href = emailLink;
+      };
 
-    const {firstName, lastName, email, phone, message} = form
-
-    const handleChange = (e) => {
-        setForm({
-          ...form,
-          [e.target.name]: e.target.value
-        })
-      }
-
-    const handleSubmit = () => {
-        if(!firstName || !lastName || !email || !phone || !message){
-            setErrorMsg('All field are required!')
-        }
-    }
-
-    useEffect(() => {
-        console.log({form})
-    }, [form])
 
     return(
         <Container id="Support">
@@ -41,7 +37,7 @@ const Support = () => {
                             <p className="second">Customers satisfations is our main goal. We give our best for our cutomers and always try to make our clients happy. We can give you any kind of support with any languages.</p>
                             <div className="btt">
                                 <a href='https://api.whatsapp.com/send?phone=6281255072243' target="_blank" rel="noreferrer">
-                                    <p style={{marginTop:'5px'}}>Contact Support</p>
+                                    <p style={{marginTop:'10px'}}>Contact Support</p>
                                 </a>
                             </div>
                         </div>
@@ -63,7 +59,7 @@ const Support = () => {
                             <p className="second">Our support team always active to support you. Any kind of questions about our product they can answer you</p>
                         </div>
 
-                        <Form>
+                        <Form onSubmit={handleSubmit}>
                             <div className="name">
                                 <input 
                                     type="text" 
@@ -105,7 +101,7 @@ const Support = () => {
                             </div>
                             <div style={{marginTop:'20px'}}>
                                 <Button 
-                                    text='Website'
+                                    text='Send Email'
                                     color='#7572E9'
                                     textColor='#fff'
                                     width='100px'

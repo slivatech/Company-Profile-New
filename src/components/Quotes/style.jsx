@@ -5,7 +5,7 @@ export const Container = styled.div`
     width: 100vw;
     display: flex;
     justify-content: center;
-    background-color: #f6f4f9;
+    // background-color: #f6f4f9;
 `
 
 export const Wrapper = styled.div`
@@ -63,5 +63,9 @@ export const ContentWrap = styled.div`
         align-items: center;
         text-align: center;
         margin-top: 10px;
+    }
+    .owname {
+        margin-top: 10px;
+        font-weight: 500;
     }
 `

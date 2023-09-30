@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
     /* padding: 0 82px; */
@@ -7,7 +7,7 @@ export const Container = styled.div`
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, rgba(40, 177, 207, 0) 1.8%, #807ED6 93.55%);
-    box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.25);
+    // box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.25);
 `
 
 export const Wrapper = styled.div`
@@ -38,6 +38,11 @@ export const ContentWrap = styled.div`
 
     .sec1{
         /* height: 100%; */
+
+        .logoss {
+            width: 100px;
+            height: 100px;
+        }
 
         @media screen and (max-width: 450px) {
             width: 100%;
@@ -82,7 +87,7 @@ export const ContentWrap = styled.div`
     }
 
     .sec2{
-        margin-top: 40px;
+        margin-top: 75px;
 
         @media screen and (max-width: 450px) {
             margin-top: 20px;
@@ -90,6 +95,7 @@ export const ContentWrap = styled.div`
 
         .header{
             margin-bottom: 12px;
+            font-weight: 500;
         }
 
         div{
@@ -105,7 +111,7 @@ export const ContentWrap = styled.div`
     }
 
     .sec3{
-        margin-top: 40px;
+        margin-top: 75px;
 
         @media screen and (max-width: 450px) {
             margin-top: 20px;
@@ -113,6 +119,7 @@ export const ContentWrap = styled.div`
 
         .header{
             margin-bottom: 12px;
+            font-weight: 500;
         }
 
         div{
@@ -129,7 +136,7 @@ export const ContentWrap = styled.div`
     }
 
     .sec4{
-        margin-top: 40px;
+        margin-top: 75px;
 
         @media screen and (max-width: 450px) {
             margin-top: 20px;
@@ -137,6 +144,7 @@ export const ContentWrap = styled.div`
 
         .header{
             margin-bottom: 12px;
+            font-weight: 500;
         }
 
         div{
@@ -153,7 +161,7 @@ export const ContentWrap = styled.div`
     }
 
     .sec5{
-        margin-top: 40px;
+        margin-top: 75px;
 
         @media screen and (max-width: 450px) {
             margin-top: 20px;
@@ -161,6 +169,7 @@ export const ContentWrap = styled.div`
 
         .header{
             margin-bottom: 12px;
+            font-weight: 500;
         }
 
         div{
@@ -184,7 +193,7 @@ export const CopyrightWrap = styled.div`
     align-items: center;
     padding: 10px;
     background-color: #c3e8ea;
-    font-size: 12px;
+    font-size: 14px;
     font-style: italic;
 `
 

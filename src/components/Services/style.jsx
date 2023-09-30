@@ -6,7 +6,7 @@ export const Container = styled.div`
     min-height: max-content;
     display: flex;
     justify-content: center;
-    background: #FFFBFB;
+    // background: #FFFBFB;
 `
 
 export const Wrapper = styled.div`
@@ -40,15 +40,15 @@ export const ContentWrap = styled.div`
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 380px;
+            width: 360px;
             /* background: red; */
 
             .first{
-                font-size: 22px;
+                font-size: 28px;
                 font-weight: 500;
             }
             .second{
-                font-size: 12px;
+                font-size: 14px;
                 text-align: center;
                 margin-top: -10px;
             }
@@ -63,7 +63,7 @@ export const ContentWrap = styled.div`
         justify-content: space-between;
         gap: 10px;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 60px;
         /* background-color: green; */
         /* position: relative; */
         /* height: 300px; */
@@ -83,7 +83,7 @@ export const ContentWrap = styled.div`
 
             @media screen and (max-width: 450px) {
                 /* height: auto; */
-                max-height: 240px;
+                max-height: 250px;
                 margin-top: 20px;
             }
         }
@@ -95,6 +95,7 @@ export const ContentWrap = styled.div`
             justify-content: center;
             /* background: red; */
             flex: 1;
+            cursor: pointer;
 
             @media screen and (max-width: 450px) {
                 padding-top: 100px;
@@ -113,7 +114,7 @@ export const ContentWrap = styled.div`
             }
 
             img{
-                width: 90px;
+                width: 100px;
                 height: 100px;
                 border-radius: 10px;
                 position: absolute;
@@ -127,9 +128,9 @@ export const ContentWrap = styled.div`
             }
 
             div{
-                width: 200px;
+                width: 240px;
                 border-radius: 20px;
-                padding: 10px 20px;
+                padding: 10px 10px;
                 z-index: 1;
                 transition: 0.5s;
                 
@@ -143,12 +144,14 @@ export const ContentWrap = styled.div`
                 }
 
                 .title{
-                    font-size: 13px;
+                    font-size: 15px;
+                    padding-top: 30px;
+                    font-weight: 500;
                 }
 
                 .text{
-                    font-size: 11.5px;
-                    margin-top: -5px;
+                    font-size: 13px;
+                    // margin-top: -5px;
                 }
             }
         }

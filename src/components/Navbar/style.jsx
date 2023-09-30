@@ -5,10 +5,10 @@ export const Header = styled.header`
     top: 0;
     right: 0;
     left: 0;
-    height: 60px;
-    /* background: #F6F4F9; */
-    background: linear-gradient(180deg, rgba(34, 79, 121, 0) 0%, rgba(11, 31, 206, 0.11) 97.77%);
-    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+    height: 65px;
+    background: transparent;
+    // background: linear-gradient(180deg, rgba(34, 79, 121, 0) 0%, rgba(11, 31, 206, 0.11) 97.77%);
+    // filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.25));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,8 +30,8 @@ export const Nav = styled.div`
 
 export const ImageContainer = styled.div`
     .logo{
-        width: 70px;
-        height: 70px;
+        width: 55px;
+        height: 55px;
     }
 `
 
@@ -41,7 +41,7 @@ export const ListContainer = styled.div`
     
     a{
         cursor: pointer;
-        font-size: 14px;
+        font-size: 16px;
         /* font-family: 'Roboto'; */
         font-style: normal;
         font-weight: 400;

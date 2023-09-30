@@ -25,13 +25,13 @@ export const TextWrap = styled.div`
     }
 
     p:first-child{
-        font-size: 22px;
+        font-size: 28px;
         font-weight: 500;
         text-align: center;
     }
 
     p:nth-child(2){
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
         margin-top: -10px;
     }
@@ -80,7 +80,7 @@ export const IconWrap = styled.div`
 `
 
 export const Card = styled.div`
-    width: 40%;
+    width: 42%;
     height: auto;
     min-height: 140px;
     border: 1px solid #000;
@@ -88,6 +88,7 @@ export const Card = styled.div`
     padding: 0 12px;
     background: #FAFAFA;
     transition: 0.5s;
+    cursor: pointer;
 
     @media screen and (max-width: 450px) {
         width: 70%;
@@ -109,10 +110,11 @@ export const Card = styled.div`
 
     .title{
         font-size: 18px;
+        font-weight: 500;
     }
 
     .desc{
-        font-size: 12px;
+        font-size: 14px;
         margin-top: -5px;
     }
 `

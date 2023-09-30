@@ -40,7 +40,7 @@ const Product = ({ width }) => {
             <CardWrap isFirst={true}>
               <ContentWrap>
                 <LeftContent>
-                  <div>SlivaDoc</div>
+                  <div >SlivaDoc</div>
                   <div>
                     Consult the best doctors and get good veterinary care. Make
                     a schedule for routine veterinary examinations with the best
@@ -57,9 +57,9 @@ const Product = ({ width }) => {
                       text="Website"
                       color="#7572E9"
                       textColor="#fff"
-                      width="80px"
-                      height="30px"
-                      fontSize="12px"
+                      width="100px"
+                      height="35px"
+                      fontSize="13px"
                     />
                   </a>
                 </LeftContent>
@@ -93,9 +93,9 @@ const Product = ({ width }) => {
                         text="Website"
                         color="#7572E9"
                         textColor="#fff"
-                        width="80px"
-                        height="30px"
-                        fontSize="12px"
+                        width="100px"
+                        height="35px"
+                        fontSize="13px"
                       />
                     </a>
                     <a href="#SlivaShop/join" rel="noreferrer">
@@ -104,9 +104,9 @@ const Product = ({ width }) => {
                         color="#000"
                         textColor="#000"
                         outline={true}
-                        width="120px"
-                        height="30px"
-                        fontSize="12px"
+                        width="140px"
+                        height="35px"
+                        fontSize="13px"
                         icon={
                           <div>
                             <img src="./assets/addUser.png" alt="" />
@@ -137,8 +137,8 @@ const Product = ({ width }) => {
                       color="#7572E9"
                       textColor="#fff"
                       width="100px"
-                      height="30px"
-                      fontSize="12px"
+                      height="35px"
+                      fontSize="13px"
                     />
                   </a>
                 </LeftContent>

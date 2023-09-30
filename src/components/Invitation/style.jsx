@@ -31,7 +31,7 @@ export const ContentWrapper = styled.div`
     background: linear-gradient(180deg, #7893F4 0%, rgba(50, 58, 86, 0) 100%);
     filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 16px;
-    padding: 20px;
+    padding: 50px 20px;
 
     @media screen and (max-width: 450px) {
         flex-direction: column;

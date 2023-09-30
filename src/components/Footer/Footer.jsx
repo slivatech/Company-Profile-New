@@ -1,10 +1,11 @@
 import React from "react";
-import { Container, ContentWrap, IconWrap, Wrapper } from "./style";
-import { Link, NavLink } from "react-router-dom";
+import { Container, ContentWrap, Wrapper } from "./style";
+// import { Link, NavLink } from "react-router-dom";
 
 import linkedin from '../../assets/linkedin.png'
 import instagram from '../../assets/instagram.png'
 import whatsapp from '../../assets/whatsapp.png'
+import Logo from '../../assets/logoutama.png'
 
 const contact = [
     {
@@ -103,7 +104,7 @@ const Footer = () => {
                 <ContentWrap>
                     <div className="sec1">
                         <div>
-                            <img src="./assets/icon.png" alt="" />
+                            <img className="logoss" src={Logo} alt="" />
                             <div className="brand">
                                 PT. Sliva Technology Indonesia
                             </div>
@@ -113,7 +114,7 @@ const Footer = () => {
                                 <div className="iconWrap">
                                 {contact.map((data, idx) => (
                                     <a href={data.url} target="_blank" rel="noreferrer" key={idx}>
-                                        <img src={data.img} alt="" />
+                                        <img className="iconSoc" src={data.img} alt="" />
                                     </a>
                                 ))}
                                 </div>

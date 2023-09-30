@@ -1,5 +1,5 @@
 
-import { Routes, Route, useLocation } from 'react-router-dom'
+// import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile'
 import Service from './components/Services/Service';

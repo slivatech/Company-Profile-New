@@ -24,9 +24,9 @@ const Profile = () => {
                                 text='Free Consultation' 
                                 color='#7572E9'
                                 textColor='#fff'
-                                fontSize='12px'
-                                width='120px'
-                                height='32px'
+                                fontSize='14px'
+                                width='150px'
+                                height='42px'
                             />
                         </a>
                     </LeftParents>

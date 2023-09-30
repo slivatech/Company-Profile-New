@@ -49,24 +49,24 @@ export const TitleContainer = styled.div`
     /* background-color: red; */
 
     .first{
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .second{
         width: 30%;
-        font-size: 23px;
+        font-size: 28px;
         text-align: center;
-        margin-top: -22px;
+        margin-top: -35px;
         font-weight: 500;
 
         @media screen and (max-width: 450px) {
-            width: 90%;
+            width: 100%;
         }
     }
 
     .third{
         width: 40%;
-        font-size: 12px;
+        font-size: 14px;
         text-align: center;
         margin-top: -20px;
         @media screen and (max-width: 450px) {
@@ -94,13 +94,13 @@ export const LeftContent = styled.div`
     padding: ${( {isRight} ) => isRight? '0 0 0 220px' : '0 190px 0 0'};
 
     div:first-child{
-        font-size: 18px;
+        font-size: 25px;
         margin-bottom: 10px;
         font-weight: 500;
     }
 
     div:nth-child(2){
-        font-size: 12px;
+        font-size: 14px;
     }
 
     a{

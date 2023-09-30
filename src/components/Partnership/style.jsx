@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
     /* background-color: red; */
 
     .title{
-        font-size: 22px;
+        font-size: 28px;
         font-weight: 500;
     }
 
@@ -45,10 +45,12 @@ export const ContentWrap = styled.div`
         justify-content: center;
         align-items: center;
         transition: 0.4s;
+        cursor: pointer;
         
         &:hover{
-            background: white;
+            background: #BEFFF7 ;
             box-shadow: 15px 20px 50px rgba(0, 0, 0, 0.03);
+            border-radius: 5px;
         }
 
         @media screen and (max-width: 450px) {

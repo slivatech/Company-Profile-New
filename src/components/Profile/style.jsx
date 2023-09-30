@@ -46,17 +46,22 @@ export const Parents = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: 35px;
+    font-size: 45px;
     p{
         margin-top: -3px;
+    }
+    @media screen and (max-width: 450px) {
+        font-size: 35px;
+        margin-top: 50px;
     }
 `
 
 export const LeftParents = styled.div`
     .text{
-        font-weight: 500;
-        margin-top: -3px;
+        font-weight: 400;
+        margin-top: -13px;
         margin-bottom: 30px;
+        font-size: 18px;
 
         @media screen and (max-width: 450px) {
             margin-top: -12px;
@@ -76,10 +81,11 @@ export const RightParents = styled.div`
         position: absolute;
         cursor: pointer;
         z-index: 1;
-        right: 235px;
+        right: 315px;
+        top: -20px;
         .image{
-            width: 100px;
-            height: 150px;
+            width: 150px;
+            height: 185px;
             transition: all .5s;
             &:hover{
                 transform: scale(1.1);
@@ -87,9 +93,9 @@ export const RightParents = styled.div`
         }
         .line{
             position: absolute;
-            bottom: 118px;
-            right: 100px;
-            height: 45px;
+            bottom: 165px;
+            right: 130px;
+            height: 40px;
         }
         .text{
             position: absolute;
@@ -98,8 +104,8 @@ export const RightParents = styled.div`
             font-size: 14px;
             /* background-color:red; */
             width: 110px;
-            right: 67px;
-            bottom: 152px;
+            right: 90px;
+            bottom: 192px;
         }
         &:hover{
             z-index: 4;
@@ -113,8 +119,8 @@ export const RightParents = styled.div`
         top: 38px;
         z-index: 2;
         .image{
-            width: 260px;
-            height: 140px;
+            width: 370px;
+            height: 205px;
             transition: all .5s;
             &:hover{
                 transform: scale(1.1);
@@ -142,12 +148,12 @@ export const RightParents = styled.div`
     .traktor{
         position: absolute;
         cursor: pointer;
-        right: 200px;
-        top: 130px;
+        right: 243px;
+        top: 192px;
         z-index: 3;
         img{
-            width: 100px;
-            height: 160px;
+            width: 125px;
+            height: 175px;
             transition: all .5s;
             &:hover{
                 transform: scale(1.1);
