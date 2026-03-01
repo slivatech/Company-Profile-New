@@ -25,7 +25,7 @@ const Profile = () => {
               Accelerate business performance using technologies.
             </p>
             <a
-              href="https://api.whatsapp.com/send?phone=6281255072243"
+              href="https://api.whatsapp.com/send?phone=6281977388341"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}

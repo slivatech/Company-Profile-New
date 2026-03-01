@@ -21,7 +21,7 @@ const contact = [
     {
         name:'whatsapp',
         img: whatsapp,
-        url: 'https://api.whatsapp.com/send?phone=6281255072243'
+        url: 'https://api.whatsapp.com/send?phone=6281977388341'
     }
 ]
 
